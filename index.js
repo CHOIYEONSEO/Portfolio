@@ -5,7 +5,7 @@ window.addEventListener('scroll',()=>{
     let pageState = window.scrollY;
     console.log(pageState);
 
-    if(pageState > 11){
+    if(pageState > 15){
         headerContent.classList.add("header_content_black");
         header.classList.add("header_fixed");
     } else {

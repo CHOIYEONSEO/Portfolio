@@ -32,7 +32,7 @@ a{
     left: 0; /* 헤더 영역을 화면 양측에 꽉차게 하기 위해 */
     right: 0; /* 헤더 영역을 화면 양측에 꽉차게 하기 위해 */
     background-color: var(--point-color); /*rgb(255, 132, 0);*/
-    height: 3rem;
+    height: 4rem;
 }
 
 .header_fixed{
@@ -56,6 +56,7 @@ a{
 }
 
 .header_content_black{
+    transition-duration: 0.8s;
     padding: 0.3rem 2rem;
 }
 
@@ -82,13 +83,10 @@ a{
 
 .head{
     background-color: var(--point-color);
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
-
-/*.head::after{
-    content: '';
-    display: block;
-    clear: both;
-}*/ 
 
 .head_content{
     overflow: hidden;
@@ -96,13 +94,12 @@ a{
     width: 100%;
     max-width: 78rem;
     padding: 10rem 2rem 1.7rem;
-    margin: 0 auto;
 }
 
 .head_img{
     width: 20rem;
     float: right;
-    padding: 0rem 10rem 0rem 5rem;
+    padding: 3rem 10rem 0rem 5rem;
 }
 
 .head_title{
@@ -113,8 +110,15 @@ a{
 }
 
 .head_subtitle{
+    font-weight: 300;
+    padding-top: 3rem;
     padding-left: 2rem;
     font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.subtitle_par1{
+    padding-bottom: 1rem;
 }
 
 .head_more{
