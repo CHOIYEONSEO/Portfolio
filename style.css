@@ -15,7 +15,7 @@ html{
 
 body{
     /* --point-color : rgba(254, 111, 15, 0.8); */ /* 주황 */
-    --point-color : rgb(255, 202, 39); /* 노랑 */
+    --point-color : rgba(255, 202, 39, 0.9); /* 노랑 */
     font-family: "Wanted Sans Std Variable", "Wanted Sans Std", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
