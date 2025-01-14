@@ -40,6 +40,7 @@ a{
 .header_fixed{
     position: fixed;
     background-color: transparent;
+    z-index: 999;
 }
 
 .header_black{
@@ -162,7 +163,8 @@ a{
 
 .about_content,
 .skills_content,
-.projects_content{
+.projects_content,
+.archiving_content{
     box-sizing: border-box;
     width: 100%;
     max-width: 78rem;
@@ -181,9 +183,14 @@ a{
     padding: 3rem 2rem 6rem;
 }
 
+.archiving_content{
+    padding: 7rem 2rem 9rem;
+}
+
 .about_title,
 .skills_title,
-.projects_title{
+.projects_title,
+.archiving_title{
     display: table;
     text-align: center;
     font-size: 2.7rem;
@@ -194,7 +201,8 @@ a{
 
 .about_text,
 .skills_text,
-.projects_text{
+.projects_text,
+.archiving_text{
     border-bottom-color: rgb(195, 195, 195);
     padding-bottom: 0.25rem;
 }
@@ -584,3 +592,47 @@ a{
 .projects_slide [id="slide05"]:checked ~ .slidewrap .control05 {display:block;}
 .projects_slide [id="slide06"]:checked ~ .slidewrap .control06 {display:block;}
 .projects_slide [id="slide07"]:checked ~ .slidewrap .control07 {display:block;}
+
+
+/* Archiving */
+.archiving_container{
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    max-width: 78rem;
+    flex-wrap: wrap;
+}
+
+.archiving_item{
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.archiving_item_container{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 30rem;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+#archiving_github{
+    padding: 2.5rem 0rem 2rem 9rem;
+}
+
+#archiving_githubBlog{
+    padding: 2.5rem 9rem 2rem 0rem;
+}
+
+.archiving_item_title{
+    padding: 1rem 0rem;
+    font-weight: 300;
+}
+
+.archiving_item_container img{
+    width: 10rem;
+}
