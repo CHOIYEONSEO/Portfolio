@@ -3,7 +3,6 @@ const headerContent = document.querySelector(".header_content")
 
 window.addEventListener('scroll',()=>{
     let pageState = window.scrollY;
-    console.log(pageState);
 
     if(pageState > 15){
         headerContent.classList.add("header_content_black");
